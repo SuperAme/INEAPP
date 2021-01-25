@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CoreData
 
-class SecondViewController: UITableViewController {
+class SecondViewController: UIViewController {
     
     var persons = [Person]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -38,7 +38,7 @@ class SecondViewController: UITableViewController {
            print("Error saving context \(error)")
         }
         
-        self.tableView.reloadData()
+        
     }
     
 }
