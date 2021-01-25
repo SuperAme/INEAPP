@@ -14,6 +14,9 @@
 		D633CDF925BF7606005A000F /* INECoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D633CDF725BF7606005A000F /* INECoreData.xcdatamodeld */; };
 		D633CDFB25BF7608005A000F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D633CDFA25BF7608005A000F /* Assets.xcassets */; };
 		D633CDFE25BF7608005A000F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D633CDFC25BF7608005A000F /* LaunchScreen.storyboard */; };
+		D633CE0725BF7676005A000F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D633CE0525BF7676005A000F /* Person+CoreDataClass.swift */; };
+		D633CE0825BF7676005A000F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D633CE0625BF7676005A000F /* Person+CoreDataProperties.swift */; };
+		D633CE0D25BF7776005A000F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D633CE0C25BF7776005A000F /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D633CDFA25BF7608005A000F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D633CDFD25BF7608005A000F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D633CDFF25BF7608005A000F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D633CE0525BF7676005A000F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D633CE0625BF7676005A000F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D633CE0C25BF7776005A000F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 		D633CDE225BF7606005A000F = {
 			isa = PBXGroup;
 			children = (
+				D633CE0525BF7676005A000F /* Person+CoreDataClass.swift */,
+				D633CE0625BF7676005A000F /* Person+CoreDataProperties.swift */,
 				D633CDED25BF7606005A000F /* INECoreData */,
 				D633CDEC25BF7606005A000F /* Products */,
 			);
@@ -60,14 +68,39 @@
 			children = (
 				D633CDEE25BF7606005A000F /* AppDelegate.swift */,
 				D633CDF025BF7606005A000F /* SceneDelegate.swift */,
-				D633CDF225BF7606005A000F /* ViewController.swift */,
-				D633CDF425BF7606005A000F /* Main.storyboard */,
+				D633CE0925BF773F005A000F /* Controllers */,
+				D633CE0A25BF7751005A000F /* Views */,
 				D633CDFA25BF7608005A000F /* Assets.xcassets */,
 				D633CDFC25BF7608005A000F /* LaunchScreen.storyboard */,
 				D633CDFF25BF7608005A000F /* Info.plist */,
-				D633CDF725BF7606005A000F /* INECoreData.xcdatamodeld */,
+				D633CE0B25BF775F005A000F /* Models */,
 			);
 			path = INECoreData;
+			sourceTree = "<group>";
+		};
+		D633CE0925BF773F005A000F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D633CDF225BF7606005A000F /* ViewController.swift */,
+				D633CE0C25BF7776005A000F /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D633CE0A25BF7751005A000F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D633CDF425BF7606005A000F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D633CE0B25BF775F005A000F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D633CDF725BF7606005A000F /* INECoreData.xcdatamodeld */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +176,9 @@
 			files = (
 				D633CDF325BF7606005A000F /* ViewController.swift in Sources */,
 				D633CDEF25BF7606005A000F /* AppDelegate.swift in Sources */,
+				D633CE0825BF7676005A000F /* Person+CoreDataProperties.swift in Sources */,
+				D633CE0725BF7676005A000F /* Person+CoreDataClass.swift in Sources */,
+				D633CE0D25BF7776005A000F /* SecondViewController.swift in Sources */,
 				D633CDF125BF7606005A000F /* SceneDelegate.swift in Sources */,
 				D633CDF925BF7606005A000F /* INECoreData.xcdatamodeld in Sources */,
 			);
