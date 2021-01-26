@@ -20,6 +20,11 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var age: UITextField!
     @IBOutlet weak var country: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+    }
+    
     @IBAction func addPerson(_ sender: UIButton) {
         let newPerson = Person(context: self.context)
         newPerson.name = name.text!

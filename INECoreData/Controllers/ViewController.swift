@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             print("Error loading categories \(error)")
         }
        
-//        tableView.reloadData()
+        tableView.reloadData()
         
     }
   
@@ -41,12 +41,12 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return persons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableItemCell", for: indexPath)
-        cell.textLabel?.text = "fndjd"
+        cell.textLabel?.text = persons[indexPath.row].name
         return cell
     }
 }
